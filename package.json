@@ -27,6 +27,15 @@
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
     "colorSchema": "dark",
-    "highlighter": "shiki"
-  }
+    "highlighter": "shiki",
+    "defaults": {
+      "fonts": {
+        "mono": "Fira Code",
+        "sans": "Avenir Next,Nunito Sans",
+        "local": "Avenir Next"
+      }
+    }
+  },
+  "author": "Elio Struyf <elio@struyfconsulting.be>",
+  "funding": "https://github.com/sponsors/estruyf"
 }
