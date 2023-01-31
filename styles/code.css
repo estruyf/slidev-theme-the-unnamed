@@ -1,0 +1,25 @@
+.shiki-dark {
+  background: var(--slidev-code-background) !important;
+}
+
+:not(pre) > code {
+  background: var(--slidev-code-background) !important;
+}
+
+.shiki-container {
+  @apply mb-4;
+
+  code, pre {
+    font-size: 1em;
+  }
+}
+
+:not(pre) > code:before,
+:not(pre) > code:after {
+  content: '`';
+  opacity: 0.50;
+}
+
+:not(pre) > code:before {
+  margin-right: -0.08em;
+}
