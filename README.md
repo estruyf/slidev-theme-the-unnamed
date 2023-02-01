@@ -84,10 +84,6 @@ themeConfig:
   code-border: "#242d34"
 ```
 
-## Components
-
-*Coming later*
-
 <br />
 <br />
 
