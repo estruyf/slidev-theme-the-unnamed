@@ -1,11 +1,103 @@
 ---
 theme: ./
 background: https://source.unsplash.com/collection/94734566/1920x1080
+
+themeConfig:
+  background: "#161C2C"
+  color: "#F3EFF5"
+  accents-teal: "#44FFD2"
+  accents-yellow: "#FFE45E"
+  accents-red: "#FE4A49"
+  accents-lightblue: "#15C2CB"
+  accents-blue: "#5EADF2"
+  accents-vulcan: "#0E131F"
+  code-background: "#0F131E"
+  code-border: "#242d34"
 ---
 
 # Slidev - The Unnamed
 
 Created by [Elio Struyf](https://elio.dev)
+
+---
+layout: about-me
+
+helloMsg: Hello!
+name: Elio Struyf
+imageSrc: https://elio.dev/eliostruyf_2022.jpg
+job: Lead DevTools Engineer @ Rapid 
+line1: "#Stickerpreneur @ pyod.shop"
+line2: "#Maintainer @ Front Matter CMS"
+social1: "@eliostruyf"
+social2: eliostruyf.com
+social3: elio@struyfconsulting.be
+---
+
+---
+layout: cover
+---
+
+# Cover title
+
+Subtitle for the cover
+
+---
+layout: section
+---
+
+# Section title
+
+Subtitle for the section
+
+---
+
+# Code with Shiki and The unnamed theme
+
+The code highlighting is powered by Shiki and [The unnamed - VS Code theme](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-unnamed-theme)
+
+```ts
+interface User {
+  id: number
+  firstName: string
+  lastName: string
+  role: string
+}
+
+function updateUser(id: number, update: Partial<User>) {
+  const user = getUser(id)
+  const newUser = { ...user, ...update }
+  saveUser(id, newUser)
+}
+```
+
+---
+
+# Table 
+
+| Title | Description | Default |
+| --- | --- | --- |
+| `layout` | The layout to use for the slide | `default` |
+| `theme` | The theme to use for the slide | `the-unnamed` |
+| `highlighter` | The highlighter to use for the slide | `shiki` |
+| `background` | The background to use for the slide | `none` |
+
+## Content test underneath
+
+Some content to place here
+
+---
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+> **Info**: This is a note
 
 ---
 
@@ -74,13 +166,3 @@ class: "text-center"
 # Learn More
 
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
-
----
-layout: flex
----
-
-# `flex` layout
-
-The `flex` layout is similar to cover, but with a bit more space for the content. Opacity is set to `1`.
-
-> **Info**: This is a note

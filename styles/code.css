@@ -1,13 +1,17 @@
 .shiki-dark {
-  background: var(--slidev-code-background) !important;
+  background: var(--slidev-theme-code-background) !important;
 }
 
 :not(pre) > code {
-  background: var(--slidev-code-background) !important;
+  background: var(--slidev-theme-code-background) !important;
 }
 
 .shiki-container {
   @apply mb-4;
+
+  .slidev-code {
+    border: 1px solid var(--slidev-code-border);
+  }
 
   code, pre {
     font-size: 1em;
@@ -20,6 +24,11 @@
   opacity: 0.50;
 }
 
-:not(pre) > code:before {
-  margin-right: -0.08em;
+:not(pre) > code {
+  &:before {
+    margin-right: -0.08em;
+  }
+
+  outline: 1px solid var(--slidev-code-border);
+  @apply rounded-sm;
 }

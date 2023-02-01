@@ -2,27 +2,85 @@
   // default theme color
   // can be overrided by uses `themeConfig` option
   --slidev-theme-primary: #161C2C;
-  --slidev-slide-container-background: #161C2C;
 
-  // Custom colors
-  --slidev-slide-color: #F3EFF5;
-  --slidev-code-background: #0F131E;
+  /* Custom colors*/
+  --slidev-theme-color: #F3EFF5;
+  --slidev-theme-background: #161C2C;
 
-  --slidev-accents-teal: #44FFD2;
-  --slidev-accents-yellow: #FFE45E;
-  --slidev-accents-red: #FE4A49;
-  --slidev-accents-blue: #5EADF2;
+  // Code colors
+  --slidev-theme-code-background: #0F131E;
+  --slidev-theme-code-border: #242d34;
+
+  // Accent colors
+  --slidev-theme-accents-teal: #44FFD2;
+  --slidev-theme-accents-yellow: #FFE45E;
+  --slidev-theme-accents-red: #FE4A49;
+  --slidev-theme-accents-lightblue: #15C2CB;
+  --slidev-theme-accents-blue: #5EADF2;
+  --slidev-theme-accents-vulcan: #0E131F;
 }
 
-
+/* The unnamed styles */ 
 .dark #slide-content,
 .dark .bg-main {
-  background: var(--slidev-slide-container-background);
-  color: var(--slidev-slide-color);
+  background: var(--slidev-theme-background);
+  color: var(--slidev-theme-color);
 }
 
-.slidev-layout h1 + p {
-  opacity: 1;
+// General layout styles
+.slidev-layout {
+  h1 + p {
+    opacity: 1;
+  }
+
+  blockquote {
+    display: flex;
+    align-items: center;
+    background: var(--slidev-theme-code-background);
+    color: var(--slidev-theme-color);
+    border-color: #F141A8;
+    border-left-width: 3px;
+    font-size: 1.1em;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply text-base;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  p + h2, 
+  ul + h2, 
+  table + h2, 
+  p + blockquote, 
+  h2 + blockquote, 
+  h3 + blockquote, 
+  h4 + blockquote, 
+  h5 + blockquote {
+    @apply mt-8;
+  }
 }
 
 .slidev-layout.cover,
@@ -36,15 +94,14 @@
   h1 + p {
     @apply -mt-2 opacity-50 mb-4;
   }
-
-  p + h2, ul + h2, table + h2 {
-    @apply mt-10;
-  }
 }
 
 .slidev-layout.cover,
+.slidev-layout.section,
+.slidev-layout.intro,
 .slidev-layout.default,
-.slidev-layout.center {
+.slidev-layout.center,
+.slidev-layout[layout="default"] {
   h1 {
     display: inline-block;
     padding: 0.25em;
@@ -63,9 +120,29 @@
       z-index: -1;
       transform: rotate(-1deg);
     }
+
+    code {
+      background: transparent !important;
+      font-size: inherit;
+      outline: 0 !important;
+    }
   }
 }
 
+
+// Default
+.slidev-layout.default,
+.slidev-layout[layout="default"] {
+  h1 {
+    color: var(--slidev-theme-code-background);
+
+    &::before {
+      background: var(--slidev-theme-accents-yellow);
+    }
+  }
+}
+
+// Cover
 .slidev-layout.cover {
 
   &::before {
@@ -81,29 +158,28 @@
   &.slidev-page-1 {
     p {
       font-weight: bold;
-      padding-left: 1.25em;
     }
   }
 
   h1 + p {
     opacity: 0.7;
+    padding-left: 1.25em;
   }
 
   > div {
     z-index: 1;
 
     h1 {
-      color: #0E131F;
+      color: var(--slidev-theme-accents-vulcan);
       padding: .25em .5em;
       margin: 0;
-      font-size: 3em;
 
       &::before {
         width: calc(100% - 0.5em);
         height: calc(100% - 0.25em);
         margin-left: -0.25em;
         margin-top: -0.12em;
-        background: var(--slidev-accents-teal);
+        background: var(--slidev-theme-accents-teal);
       }
     }
 
@@ -115,22 +191,57 @@
 
     h2 {
       margin: .5em 0 0;
+      padding-left: .5em;
     }
 
     code {
-      color: var(--slidev-slide-color);
-      border-radius: 0 !important;
+      color: var(--slidev-theme-color);
     }
   }
 }
 
+// Section
+.slidev-layout.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  h1 {
+    color: var(--slidev-theme-code-background);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-left: -0.05em;
+    width: fit-content;
+    position: relative;
+
+    &::before {
+      background: var(--slidev-theme-accents-lightblue);
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+    line-height: 1.25em;
+  }
+}
+
+// Center
 .slidev-layout.center {
   h1 {
-    color: var(--slidev-code-background);
+    color: var(--slidev-theme-code-background);
     margin-bottom: 0;
 
     &::before {
-      background: var(--slidev-accents-blue);
+      background: var(--slidev-theme-accents-blue);
     }
 
     code {
@@ -139,36 +250,13 @@
   }
 }
 
-.slidev-layout.default {
-  h1 {
-    color: var(--slidev-code-background);
-
-    &::before {
-      background: var(--slidev-accents-yellow);
-    }
-
-    code {
-      background: transparent !important;
-    }
-  }
-}
-
-.slidev-layout blockquote {
-  display: flex;
-  align-items: center;
-  background: var(--slidev-code-background);
-  color: var(--slidev-slide-color);
-  border-color: #F141A8;
-  border-left-width: 3px;
-  font-size: 1.1em;
-}
-
+/* About me slide */
 .about-me {
-  background: var(--slidev-slide-color) !important;
-  color: var(--slidev-code-background) !important;
+  background: var(--slidev-theme-color) !important;
+  color: var(--slidev-theme-code-background) !important;
 
   h1 {
-    background: var(--slidev-accents-yellow);
+    background: var(--slidev-theme-accents-yellow);
     display: inline-block;
     padding: 0.25em;
     font-weight: bold;
@@ -176,7 +264,7 @@
   }
 
   h2 {
-    color: var(--slidev-accents-red);
+    color: var(--slidev-theme-accents-red);
     font-size: 2.5em;
   }
 

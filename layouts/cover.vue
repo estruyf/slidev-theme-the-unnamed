@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { handleBackground } from '../layoutHelper'
+import { handleBackground } from '@slidev/client/layoutHelper'
 const props = defineProps({
   background: {
     default: '',

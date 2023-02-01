@@ -37,5 +37,6 @@
     }
   },
   "author": "Elio Struyf <elio@struyfconsulting.be>",
-  "funding": "https://github.com/sponsors/estruyf"
+  "funding": "https://github.com/sponsors/estruyf",
+  "bugs": "https://github.com/estruyf/slidev-theme-the-unnamed/issues"
 }
