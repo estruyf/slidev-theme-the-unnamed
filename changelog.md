@@ -1,11 +1,16 @@
 # Changelog
 
-## [0.0.4] - 2023-02-02
+## [0.0.5] - 2023-02-02
+
+- Better css variable names for theming
+- Added center layout
+
+## [0.0.4] - 2023-02-01
 
 - Added mermaid styles for `sequenceDiagram`
 - Small fixes
 
-## [0.0.3] - 2023-02-02
+## [0.0.3] - 2023-02-01
 
 - Updated styles for all layouts
 - Added screenshots and documentation

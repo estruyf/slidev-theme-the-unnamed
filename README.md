@@ -4,6 +4,8 @@
 
 A [Slidev](https://sli.dev/) theme based on the [The unnamed - VS Code theme](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-unnamed-theme) by [Elio Struyf](https://elio.dev).
 
+The unnamed theme allows you to fully customize its colors to fit your brand.
+
 ## Usage
 
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
@@ -26,7 +28,7 @@ The theme currently has the following layouts:
 
 ### Cover
 
-![](./assets/001.png)
+![](/assets/cover.png)
 
 **Usage**
 
@@ -39,7 +41,7 @@ background: <image url> (optional)
 
 ### About me
 
-![](./assets/002.png)
+![](/assets/about-me.png)
 
 **Usage**
 
@@ -59,9 +61,13 @@ social3:
 ---
 ```
 
+### Center
+
+![](/assets/center.png)
+
 ### Default
 
-![](./assets/005.png)
+![](/assets/default.png)
 
 
 ## Cusomizations
@@ -70,9 +76,12 @@ You can customize the theme by adding the following frontmatter to your `slides.
 
 ```yaml
 themeConfig:
-  background: "#161C2C"
   color: "#F3EFF5"
-  
+  background: "#161C2C"
+
+  code-background: "#0F131E"
+  code-border: "#242d34"
+
   accents-teal: "#44FFD2"
   accents-yellow: "#FFE45E"
   accents-red: "#FE4A49"
@@ -80,9 +89,26 @@ themeConfig:
   accents-blue: "#5EADF2"
   accents-vulcan: "#0E131F"
 
-  code-background: "#0F131E"
-  code-border: "#242d34"
+  default-headingBg: var(--slidev-theme-accents-yellow)
+  default-headingColor: var(--slidev-theme-accents-vulcan)
+
+  center-headingBg: var(--slidev-theme-accents-blue)
+  center-headingColor: var(--slidev-theme-accents-vulcan)
+
+  cover-headingBg: var(--slidev-theme-accents-teal)
+  cover-headingColor: var(--slidev-theme-accents-vulcan)
+
+  section-headingBg: var(--slidev-theme-accents-lightblue)
+  section-headingColor: var(--slidev-theme-accents-vulcan)
+
+  aboutme-bg: var(--slidev-theme-color)
+  aboutme-color: var(--slidev-theme-background)
+  aboutme-helloBg: var(--slidev-theme-accents-yellow)
+  aboutme-helloColor: var(--slidev-theme-background)
+  aboutme-nameColor: var(--slidev-theme-accents-red)
 ```
+
+> **Info**: we made it possible to change all the accent colors, or define your own colors per type of slide.
 
 <br />
 <br />

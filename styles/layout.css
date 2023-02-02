@@ -12,12 +12,36 @@
   --slidev-theme-code-border: #242d34;
 
   // Accent colors
+  --slidev-theme-accents-rose: #f141a8;
   --slidev-theme-accents-teal: #44FFD2;
   --slidev-theme-accents-yellow: #FFE45E;
   --slidev-theme-accents-red: #FE4A49;
   --slidev-theme-accents-lightblue: #15C2CB;
   --slidev-theme-accents-blue: #5EADF2;
   --slidev-theme-accents-vulcan: #0E131F;
+
+  // Default
+  --slidev-theme-default-headingBg: var(--slidev-theme-accents-yellow);
+  --slidev-theme-default-headingColor: var(--slidev-theme-accents-vulcan);
+
+  // Center
+  --slidev-theme-center-headingBg: var(--slidev-theme-accents-blue);
+  --slidev-theme-center-headingColor: var(--slidev-theme-accents-vulcan);
+
+  // Cover
+  --slidev-theme-cover-headingBg: var(--slidev-theme-accents-teal);
+  --slidev-theme-cover-headingColor: var(--slidev-theme-accents-vulcan);
+
+  // Section
+  --slidev-theme-section-headingBg: var(--slidev-theme-accents-lightblue);
+  --slidev-theme-section-headingColor: var(--slidev-theme-accents-vulcan);
+
+  // About me
+  --slidev-theme-aboutme-bg: var(--slidev-theme-color);
+  --slidev-theme-aboutme-color: var(--slidev-theme-background);
+  --slidev-theme-aboutme-helloBg: var(--slidev-theme-accents-yellow);
+  --slidev-theme-aboutme-helloColor: var(--slidev-theme-background);
+  --slidev-theme-aboutme-nameColor: var(--slidev-theme-accents-red);
 }
 
 /* The unnamed styles */ 
@@ -106,7 +130,8 @@
 .slidev-layout.intro,
 .slidev-layout.default,
 .slidev-layout.center,
-.slidev-layout[layout="default"] {
+.slidev-layout[layout="default"],
+.about-me {
   h1 {
     display: inline-block;
     padding: 0.25em;
@@ -139,10 +164,10 @@
 .slidev-layout.default,
 .slidev-layout[layout="default"] {
   h1 {
-    color: var(--slidev-theme-code-background);
+    color: var(--slidev-theme-default-headingColor);
 
     &::before {
-      background: var(--slidev-theme-accents-yellow);
+      background: var(--slidev-theme-default-headingBg);
     }
   }
 }
@@ -175,7 +200,7 @@
     z-index: 1;
 
     h1 {
-      color: var(--slidev-theme-accents-vulcan);
+      color: var(--slidev-theme-cover-headingColor);
       padding: .25em .5em;
       margin: 0;
 
@@ -184,7 +209,7 @@
         height: calc(100% - 0.25em);
         margin-left: -0.25em;
         margin-top: -0.12em;
-        background: var(--slidev-theme-accents-teal);
+        background: var(--slidev-theme-cover-headingBg);
       }
     }
 
@@ -220,7 +245,7 @@
   padding-bottom: 2.5rem;
 
   h1 {
-    color: var(--slidev-theme-code-background);
+    color: var(--slidev-theme-section-headingColor);
     font-size: 2.25rem;
     line-height: 2.5rem;
     margin-left: -0.05em;
@@ -228,7 +253,7 @@
     position: relative;
 
     &::before {
-      background: var(--slidev-theme-accents-lightblue);
+      background: var(--slidev-theme-section-headingBg);
     }
   }
 
@@ -242,39 +267,44 @@
 // Center
 .slidev-layout.center {
   h1 {
-    color: var(--slidev-theme-code-background);
+    width: fit-content;
+    color: var(--slidev-theme-center-headingColor);
     margin-bottom: 0;
 
     &::before {
-      background: var(--slidev-theme-accents-blue);
+      background: var(--slidev-theme-center-headingBg);
     }
 
     code {
       background: transparent !important;
     }
   }
+
+
 }
 
 /* About me slide */
 .about-me {
-  background: var(--slidev-theme-color) !important;
-  color: var(--slidev-theme-code-background) !important;
+  background: var(--slidev-theme-aboutme-bg);
+  color: var(--slidev-theme-aboutme-color) !important;
 
   h1 {
-    background: var(--slidev-theme-accents-yellow);
-    display: inline-block;
+    color: var(--slidev-theme-aboutme-helloColor);
     padding: 0.25em;
     font-weight: bold;
     font-size: 3em;
+
+    &::before {
+      background: var(--slidev-theme-aboutme-helloBg);
+    }
   }
 
   h2 {
-    color: var(--slidev-theme-accents-red);
+    color: var(--slidev-theme-aboutme-nameColor);
     font-size: 2.5em;
   }
 
   p {
     margin-bottom: 0;
-    color: #3F3F3F;
   }
 }

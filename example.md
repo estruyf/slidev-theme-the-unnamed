@@ -3,16 +3,36 @@ theme: ./
 background: https://source.unsplash.com/collection/94734566/1920x1080
 
 themeConfig:
-  background: "#161C2C"
   color: "#F3EFF5"
+  background: "#161C2C"
+
+  code-background: "#0F131E"
+  code-border: "#242d34"
+
   accents-teal: "#44FFD2"
   accents-yellow: "#FFE45E"
   accents-red: "#FE4A49"
   accents-lightblue: "#15C2CB"
   accents-blue: "#5EADF2"
   accents-vulcan: "#0E131F"
-  code-background: "#0F131E"
-  code-border: "#242d34"
+
+  default-headingBg: var(--slidev-theme-accents-yellow)
+  default-headingColor: var(--slidev-theme-accents-vulcan)
+
+  center-headingBg: var(--slidev-theme-accents-blue)
+  center-headingColor: var(--slidev-theme-accents-vulcan)
+
+  cover-headingBg: var(--slidev-theme-accents-teal)
+  cover-headingColor: var(--slidev-theme-accents-vulcan)
+
+  section-headingBg: var(--slidev-theme-accents-lightblue)
+  section-headingColor: var(--slidev-theme-accents-vulcan)
+
+  aboutme-bg: var(--slidev-theme-color)
+  aboutme-color: var(--slidev-theme-background)
+  aboutme-helloBg: var(--slidev-theme-accents-yellow)
+  aboutme-helloColor: var(--slidev-theme-background)
+  aboutme-nameColor: var(--slidev-theme-accents-red)
 ---
 
 # Slidev - The Unnamed
@@ -48,6 +68,14 @@ layout: section
 # Section title
 
 Subtitle for the section
+
+---
+layout: center
+---
+
+# Center title
+
+Subtitle for the center layout
 
 ---
 
