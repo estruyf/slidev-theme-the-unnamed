@@ -22,6 +22,7 @@ The theme currently has the following layouts:
 
 - `default`
 - `cover`
+- `center`
 - `section`
 - `about-me`
 - and the ones from Slidev itself
