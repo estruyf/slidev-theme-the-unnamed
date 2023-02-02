@@ -66,6 +66,10 @@ social3:
 
 ![](/assets/center.png)
 
+### Section
+
+![](/assets/section.png)
+
 ### Default
 
 ![](/assets/default.png)

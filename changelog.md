@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.6] - 2023-02-02
+
+- Documentation update
+
 ## [0.0.5] - 2023-02-02
 
 - Better css variable names for theming
