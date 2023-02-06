@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.7] - 2023-02-06
+
+- [#1](https://github.com/estruyf/slidev-theme-the-unnamed/pull/1): Fix css comments by [liaobinbin](https://github.com/liaobinbin)
+
 ## [0.0.6] - 2023-02-02
 
 - Documentation update
