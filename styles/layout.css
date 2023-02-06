@@ -1,42 +1,42 @@
 :root {
-  // default theme color
-  // can be overrided by uses `themeConfig` option
-  --slidev-theme-primary: #161C2C;
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-primary: #161c2c;
 
   /* Custom colors*/
-  --slidev-theme-color: #F3EFF5;
-  --slidev-theme-background: #161C2C;
+  --slidev-theme-color: #f3eff5;
+  --slidev-theme-background: #161c2c;
 
-  // Code colors
-  --slidev-theme-code-background: #0F131E;
+  /* Code colors */
+  --slidev-theme-code-background: #0f131e;
   --slidev-theme-code-border: #242d34;
 
-  // Accent colors
+  /* Accent colors */
   --slidev-theme-accents-rose: #f141a8;
-  --slidev-theme-accents-teal: #44FFD2;
-  --slidev-theme-accents-yellow: #FFE45E;
-  --slidev-theme-accents-red: #FE4A49;
-  --slidev-theme-accents-lightblue: #15C2CB;
-  --slidev-theme-accents-blue: #5EADF2;
-  --slidev-theme-accents-vulcan: #0E131F;
+  --slidev-theme-accents-teal: #44ffd2;
+  --slidev-theme-accents-yellow: #ffe45e;
+  --slidev-theme-accents-red: #fe4a49;
+  --slidev-theme-accents-lightblue: #15c2cb;
+  --slidev-theme-accents-blue: #5eadf2;
+  --slidev-theme-accents-vulcan: #0e131f;
 
-  // Default
+  /*  Default */
   --slidev-theme-default-headingBg: var(--slidev-theme-accents-yellow);
   --slidev-theme-default-headingColor: var(--slidev-theme-accents-vulcan);
 
-  // Center
+  /*  Center */
   --slidev-theme-center-headingBg: var(--slidev-theme-accents-blue);
   --slidev-theme-center-headingColor: var(--slidev-theme-accents-vulcan);
 
-  // Cover
+  /*  Cover */
   --slidev-theme-cover-headingBg: var(--slidev-theme-accents-teal);
   --slidev-theme-cover-headingColor: var(--slidev-theme-accents-vulcan);
 
-  // Section
+  /*  Section */
   --slidev-theme-section-headingBg: var(--slidev-theme-accents-lightblue);
   --slidev-theme-section-headingColor: var(--slidev-theme-accents-vulcan);
 
-  // About me
+  /*  About me */
   --slidev-theme-aboutme-bg: var(--slidev-theme-color);
   --slidev-theme-aboutme-color: var(--slidev-theme-background);
   --slidev-theme-aboutme-helloBg: var(--slidev-theme-accents-yellow);
@@ -44,14 +44,14 @@
   --slidev-theme-aboutme-nameColor: var(--slidev-theme-accents-red);
 }
 
-/* The unnamed styles */ 
+/* The unnamed styles */
 .dark #slide-content,
 .dark .bg-main {
   background: var(--slidev-theme-background);
   color: var(--slidev-theme-color);
 }
 
-// General layout styles
+/*  General layout styles */
 .slidev-layout {
   h1 + p {
     opacity: 1;
@@ -62,7 +62,7 @@
     align-items: center;
     background: var(--slidev-theme-code-background);
     color: var(--slidev-theme-color);
-    border-color: #F141A8;
+    border-color: #f141a8;
     border-left-width: 3px;
     font-size: 1.1em;
   }
@@ -100,13 +100,13 @@
     @apply mt-4;
   }
 
-  p + h2, 
-  ul + h2, 
-  table + h2, 
-  p + blockquote, 
-  h2 + blockquote, 
-  h3 + blockquote, 
-  h4 + blockquote, 
+  p + h2,
+  ul + h2,
+  table + h2,
+  p + blockquote,
+  h2 + blockquote,
+  h3 + blockquote,
+  h4 + blockquote,
   h5 + blockquote {
     @apply mt-8;
   }
@@ -159,8 +159,7 @@
   }
 }
 
-
-// Default
+/*  Default */
 .slidev-layout.default,
 .slidev-layout[layout="default"] {
   h1 {
@@ -172,11 +171,10 @@
   }
 }
 
-// Cover
+/*  Cover */
 .slidev-layout.cover {
-
   &::before {
-    background: rgba(15, 19, 30, 0.40);
+    background: rgba(15, 19, 30, 0.4);
     content: " ";
     position: absolute;
     top: 0;
@@ -201,7 +199,7 @@
 
     h1 {
       color: var(--slidev-theme-cover-headingColor);
-      padding: .25em .5em;
+      padding: 0.25em 0.5em;
       margin: 0;
 
       &::before {
@@ -220,8 +218,8 @@
     }
 
     h2 {
-      margin: .5em 0 0;
-      padding-left: .5em;
+      margin: 0.5em 0 0;
+      padding-left: 0.5em;
     }
 
     code {
@@ -230,7 +228,7 @@
   }
 }
 
-// Section
+/*  Section */
 .slidev-layout.section {
   display: flex;
   flex-direction: column;
@@ -264,7 +262,7 @@
   }
 }
 
-// Center
+/*  Center */
 .slidev-layout.center {
   h1 {
     width: fit-content;
@@ -279,8 +277,6 @@
       background: transparent !important;
     }
   }
-
-
 }
 
 /* About me slide */
