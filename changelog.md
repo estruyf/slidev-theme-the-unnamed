@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.9] - 2023-02-07
+
+- [#3](https://github.com/estruyf/slidev-theme-the-unnamed/issues/3): Add background theme variable as css variable(s) and slide field property
+
 ## [0.0.8] - 2023-02-07
 
 - [#2](https://github.com/estruyf/slidev-theme-the-unnamed/pull/2): Fix in Shiki path by [liaobinbin](https://github.com/liaobinbin)

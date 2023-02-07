@@ -23,18 +23,22 @@
   /*  Default */
   --slidev-theme-default-headingBg: var(--slidev-theme-accents-yellow);
   --slidev-theme-default-headingColor: var(--slidev-theme-accents-vulcan);
+  --slidev-theme-default-background: var(--slidev-theme-background);
 
   /*  Center */
   --slidev-theme-center-headingBg: var(--slidev-theme-accents-blue);
   --slidev-theme-center-headingColor: var(--slidev-theme-accents-vulcan);
+  --slidev-theme-center-background: var(--slidev-theme-background);
 
   /*  Cover */
   --slidev-theme-cover-headingBg: var(--slidev-theme-accents-teal);
   --slidev-theme-cover-headingColor: var(--slidev-theme-accents-vulcan);
+  --slidev-theme-cover-background: var(--slidev-theme-background);
 
   /*  Section */
   --slidev-theme-section-headingBg: var(--slidev-theme-accents-lightblue);
   --slidev-theme-section-headingColor: var(--slidev-theme-accents-vulcan);
+  --slidev-theme-section-background: var(--slidev-theme-background);
 
   /*  About me */
   --slidev-theme-aboutme-bg: var(--slidev-theme-color);
@@ -46,7 +50,8 @@
 
 /* The unnamed styles */
 .dark #slide-content,
-.dark .bg-main {
+.dark .bg-main,
+.slidev-layout {
   background: var(--slidev-theme-background);
   color: var(--slidev-theme-color);
 }
@@ -247,8 +252,10 @@
     font-size: 2.25rem;
     line-height: 2.5rem;
     margin-left: -0.05em;
+    width: -moz-fit-content;
     width: fit-content;
     position: relative;
+    margin-bottom: 0;
 
     &::before {
       background: var(--slidev-theme-section-headingBg);
@@ -265,6 +272,7 @@
 /*  Center */
 .slidev-layout.center {
   h1 {
+    width: -moz-fit-content;
     width: fit-content;
     color: var(--slidev-theme-center-headingColor);
     margin-bottom: 0;

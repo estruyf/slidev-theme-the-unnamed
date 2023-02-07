@@ -22,7 +22,8 @@
     "theme-vitesse": "^0.6.2"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.39.0"
+    "@slidev/cli": "^0.39.0",
+    "@types/node": "^18.13.0"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {

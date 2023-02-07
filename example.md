@@ -18,15 +18,19 @@ themeConfig:
 
   default-headingBg: var(--slidev-theme-accents-yellow)
   default-headingColor: var(--slidev-theme-accents-vulcan)
+  default-background: var(--slidev-theme-background)
 
   center-headingBg: var(--slidev-theme-accents-blue)
   center-headingColor: var(--slidev-theme-accents-vulcan)
+  center-background: var(--slidev-theme-background)
 
   cover-headingBg: var(--slidev-theme-accents-teal)
   cover-headingColor: var(--slidev-theme-accents-vulcan)
+  cover-background: var(--slidev-theme-background)
 
   section-headingBg: var(--slidev-theme-accents-lightblue)
   section-headingColor: var(--slidev-theme-accents-vulcan)
+  section-background: var(--slidev-theme-background)
 
   aboutme-bg: var(--slidev-theme-color)
   aboutme-color: var(--slidev-theme-background)
