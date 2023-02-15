@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.0.10] - 2023-02-15
+
+- Added checkbox styling
+- Config change in for shiki
+
 ## [0.0.9] - 2023-02-07
 
 - [#3](https://github.com/estruyf/slidev-theme-the-unnamed/issues/3): Add background theme variable as css variable(s) and slide field property

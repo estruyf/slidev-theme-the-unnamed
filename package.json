@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "slidev build example.md",
-    "dev": "slidev example.md",
+    "dev": "NODE_ENV=development slidev example.md",
     "export": "slidev export example.md",
     "screenshot": "slidev export example.md --format png"
   },

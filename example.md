@@ -119,6 +119,14 @@ Some content to place here
 
 ---
 
+# Todo 
+
+- [ ] Add a todo list
+- [ ] Add a todo list
+- [x] Add a todo list
+
+---
+
 # Heading 1
 
 ## Heading 2
