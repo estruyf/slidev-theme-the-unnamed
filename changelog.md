@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.11] - 2023-09-08
+
+- Fix issue with `layoutHelper`
+
 ## [0.0.10] - 2023-02-15
 
 - Added checkbox styling
