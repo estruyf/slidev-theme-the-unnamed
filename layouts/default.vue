@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { handleBackground } from '../utils/layoutHelper'
+import { computed } from "vue";
+import { handleBackground } from "../utils/layoutHelper";
 const props = defineProps({
   background: {
-    default: '',
+    default: "",
   },
-})
+});
 
-const style = computed(() => handleBackground(props.background, true))
+const style = computed(() => handleBackground(props.background, true));
 </script>
 
 <template>
-  <div class="bg-main slidev-layout default" :style="style">
+  <div class="slidev-layout default" :style="style">
     <div class="my-auto h-full">
       <slot />
     </div>

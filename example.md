@@ -32,7 +32,7 @@ themeConfig:
   section-headingColor: var(--slidev-theme-accents-vulcan)
   section-background: var(--slidev-theme-background)
 
-  aboutme-bg: var(--slidev-theme-color)
+  aboutme-background: var(--slidev-theme-color)
   aboutme-color: var(--slidev-theme-background)
   aboutme-helloBg: var(--slidev-theme-accents-yellow)
   aboutme-helloColor: var(--slidev-theme-background)

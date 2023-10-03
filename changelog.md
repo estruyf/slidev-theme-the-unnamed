@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.12] - 2023-10-03
+
+- Color fixes on various layouts
+
 ## [0.0.11] - 2023-09-08
 
 - Fix issue with `layoutHelper`
