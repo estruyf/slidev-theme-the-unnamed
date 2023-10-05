@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.13] - 2023-10-05
+
+- Remove backdrop if no background is set on cover
+
 ## [0.0.12] - 2023-10-03
 
 - Color fixes on various layouts

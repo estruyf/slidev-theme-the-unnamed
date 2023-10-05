@@ -213,6 +213,12 @@
     left: 0;
   }
 
+  &.no-background {
+    &::before {
+      display: none;
+    }
+  }
+
   h1 + p {
     opacity: 0.7;
     padding-left: 1.25em;

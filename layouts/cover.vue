@@ -7,11 +7,13 @@ const props = defineProps({
   },
 })
 
-const style = computed(() => handleBackground(props.background, true))
+const slideBg = handleBackground(props.background, true);
+console.log(slideBg);
+const style = computed(() => slideBg)
 </script>
 
 <template>
-  <div class="slidev-layout cover" :style="style">
+  <div class="slidev-layout cover" :style="style" v-bind:class="(slideBg.background || slideBg.backgroundImage) ? '' : 'no-background'">
     <div class="my-auto w-full">
       <slot />
     </div>
