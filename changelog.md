@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.14] - 2023-10-17
+
+- Added styles for the two-column layout
+
 ## [0.0.13] - 2023-10-05
 
 - Remove backdrop if no background is set on cover
