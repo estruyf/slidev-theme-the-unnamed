@@ -24,6 +24,7 @@ The theme currently has the following layouts:
 - `cover`
 - `center`
 - `section`
+- `two-cols`
 - `about-me`
 - and the ones from Slidev itself
 
@@ -88,6 +89,28 @@ background: <image url or HEX or rbg or rgba> (optional)
 ---
 ```
 
+### Two columns
+
+![](/assets/two-cols.png)
+
+**Usage**
+
+```yaml
+---
+layout: two-cols
+---
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
 ### Default
 
 ![](/assets/default.png)
@@ -100,7 +123,6 @@ layout: default
 background: <image url or HEX or rbg or rgba> (optional)
 ---
 ```
-
 
 ## Cusomizations
 
@@ -120,6 +142,8 @@ themeConfig:
   accents-lightblue: "#15C2CB"
   accents-blue: "#5EADF2"
   accents-vulcan: "#0E131F"
+
+  header-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   default-headingBg: var(--slidev-theme-accents-yellow)
   default-headingColor: var(--slidev-theme-accents-vulcan)

@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.15] - 2023-10-18
+
+- Added box shadow to the header + `header-shadow` theme option
+
 ## [0.0.14] - 2023-10-17
 
 - Added styles for the two-column layout

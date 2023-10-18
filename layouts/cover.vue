@@ -8,7 +8,6 @@ const props = defineProps({
 })
 
 const slideBg = handleBackground(props.background, true);
-console.log(slideBg);
 const style = computed(() => slideBg)
 </script>
 

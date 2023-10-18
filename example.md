@@ -16,6 +16,8 @@ themeConfig:
   accents-blue: "#5EADF2"
   accents-vulcan: "#0E131F"
 
+  header-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
   default-headingBg: var(--slidev-theme-accents-yellow)
   default-headingColor: var(--slidev-theme-accents-vulcan)
   default-background: var(--slidev-theme-background)
@@ -80,6 +82,20 @@ layout: center
 # Center title
 
 Subtitle for the center layout
+
+---
+layout: two-cols
+---
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
 
 ---
 
