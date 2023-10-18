@@ -153,6 +153,7 @@
 .slidev-layout.intro,
 .slidev-layout.default,
 .slidev-layout.center,
+.slidev-layout.two-columns,
 .slidev-layout[layout="default"],
 .about-me {
   h1 {
@@ -317,6 +318,19 @@
 
   p {
     font-size: 1.25rem;
+  }
+}
+
+/* Two columns */
+.slidev-layout.two-columns {
+  background: var(--slidev-theme-default-background);
+
+  h1 {
+    color: var(--slidev-theme-default-headingColor);
+
+    &::before {
+      background: var(--slidev-theme-default-headingBg);
+    }
   }
 }
 
