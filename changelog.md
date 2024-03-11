@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.16] - 2024-03-11
+
+- [#5](https://github.com/estruyf/slidev-theme-the-unnamed/pull/5): Fix Shiki `loadTheme` deprecation warning. Thanks to [fgrandel](https://github.com/fgrandel).
+
 ## [0.0.15] - 2023-10-18
 
 - Added box shadow to the header + `header-shadow` theme option
