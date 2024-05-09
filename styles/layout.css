@@ -30,6 +30,9 @@
   --slidev-theme-accents-blue: #5eadf2;
   --slidev-theme-accents-vulcan: #0e131f;
 
+  /* Header shadow */
+  --slidev-theme-header-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
   /*  Default */
   --slidev-theme-default-headingBg: var(--slidev-theme-accents-yellow);
   --slidev-theme-default-headingColor: var(--slidev-theme-accents-vulcan);
@@ -183,6 +186,7 @@
     z-index: 1;
 
     &::before {
+      box-shadow: var(--slidev-theme-header-shadow);
       content: " ";
       display: block;
       position: absolute;
