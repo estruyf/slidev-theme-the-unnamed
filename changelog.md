@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.18] - 2024-05-09
+
+- Added css to change the inline code block background and foreground colors
+
 ## [0.0.17] - 2024-05-09
 
 - Added new font size variables for each layout and code blocks

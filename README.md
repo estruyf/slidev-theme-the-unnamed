@@ -172,6 +172,8 @@ themeConfig:
   aboutme-nameColor: var(--slidev-theme-accents-red)
   aboutme-font-size: 1.1em
 
+  code-background: var(--slidev-theme-code-background)
+  code-color: var(--slidev-theme-code-color)
   code-font-size: 1.1em
 ```
 

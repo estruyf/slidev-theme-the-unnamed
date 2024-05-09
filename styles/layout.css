@@ -73,6 +73,11 @@
 .slidev-layout {
   font-size: var(--slidev-theme-font-size, 1.1em);
 
+  :not(pre) > code {
+    background: var(--slidev-theme-code-background);
+    color: var(--slidev-theme-code-color, var(--slidev-theme-color));
+  }
+
   h1 + p {
     opacity: 1;
   }
