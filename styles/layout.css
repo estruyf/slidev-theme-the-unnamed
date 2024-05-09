@@ -71,7 +71,7 @@
 
 /*  General layout styles */
 .slidev-layout {
-  font-size: var(--slidev-theme-font-size);
+  font-size: var(--slidev-theme-font-size, 1.1em);
 
   h1 + p {
     opacity: 1;
@@ -84,7 +84,7 @@
     color: var(--slidev-theme-color);
     border-color: #f141a8;
     border-left-width: 3px;
-    font-size: 1.1em;
+    font-size: var(--slidev-theme-font-size, 1.1em);
   }
 
   h1 {
@@ -149,10 +149,11 @@
     }
   }
 
-  .slidev-code {
+  .slidev-code code {
     font-size: var(
       --slidev-theme-code-font-size,
-      var(--slidev-code-font-size)
+      var(--slidev-code-font-size),
+      1em
     ) !important;
   }
 }

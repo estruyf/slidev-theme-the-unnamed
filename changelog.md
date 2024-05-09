@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.17] - 2024-05-09
+
+- Added new font size variables for each layout and code blocks
+
 ## [0.0.16] - 2024-03-11
 
 - [#5](https://github.com/estruyf/slidev-theme-the-unnamed/pull/5): Fix Shiki `loadTheme` deprecation warning. Thanks to [fgrandel](https://github.com/fgrandel).

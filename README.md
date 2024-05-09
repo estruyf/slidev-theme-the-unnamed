@@ -148,31 +148,31 @@ themeConfig:
   default-headingBg: var(--slidev-theme-accents-yellow)
   default-headingColor: var(--slidev-theme-accents-vulcan)
   default-background: var(--slidev-theme-background)
-  default-font-size: var(--slidev-theme-font-size)
+  default-font-size: 1.1em
 
   center-headingBg: var(--slidev-theme-accents-blue)
   center-headingColor: var(--slidev-theme-accents-vulcan)
   center-background: var(--slidev-theme-background)
-  center-font-size: var(--slidev-theme-font-size)
+  center-font-size: 1.1em
 
   cover-headingBg: var(--slidev-theme-accents-teal)
   cover-headingColor: var(--slidev-theme-accents-vulcan)
   cover-background: var(--slidev-theme-background)
-  cover-font-size: var(--slidev-theme-font-size)
+  cover-font-size: 1.1em
 
   section-headingBg: var(--slidev-theme-accents-lightblue)
   section-headingColor: var(--slidev-theme-accents-vulcan)
   section-background: var(--slidev-theme-background)
-  section-font-size: var(--slidev-theme-font-size)
+  section-font-size: 1.1em
 
   aboutme-background: var(--slidev-theme-color)
   aboutme-color: var(--slidev-theme-background)
   aboutme-helloBg: var(--slidev-theme-accents-yellow)
   aboutme-helloColor: var(--slidev-theme-background)
   aboutme-nameColor: var(--slidev-theme-accents-red)
-  aboutme-font-size: var(--slidev-theme-font-size)
+  aboutme-font-size: 1.1em
 
-  code-font-size: 12px
+  code-font-size: 1.1em
 ```
 
 > **Info**: we made it possible to change all the accent colors, or define your own colors per type of slide.
