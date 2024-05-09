@@ -7,6 +7,16 @@
   --slidev-theme-color: #f3eff5;
   --slidev-theme-background: #161c2c;
 
+  /* Text sizes */
+  --slidev-theme-font-size: 1.1em;
+  --slidev-theme-default-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-cover-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-section-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-center-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-two-columns-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-aboutme-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-code-font-size: 12px;
+
   /* Code colors */
   --slidev-theme-code-background: #0f131e;
   --slidev-theme-code-border: #242d34;
@@ -58,6 +68,8 @@
 
 /*  General layout styles */
 .slidev-layout {
+  font-size: var(--slidev-theme-font-size);
+
   h1 + p {
     opacity: 1;
   }
@@ -133,6 +145,13 @@
       background-repeat: no-repeat;
     }
   }
+
+  .slidev-code {
+    font-size: var(
+      --slidev-theme-code-font-size,
+      var(--slidev-code-font-size)
+    ) !important;
+  }
 }
 
 .slidev-layout.cover,
@@ -187,6 +206,7 @@
 .slidev-layout.default,
 .slidev-layout[layout="default"] {
   background: var(--slidev-theme-default-background);
+  font-size: var(--slidev-theme-default-font-size);
 
   h1 {
     color: var(--slidev-theme-default-headingColor);
@@ -203,6 +223,7 @@
 /*  Cover */
 .slidev-layout.cover {
   background: var(--slidev-theme-cover-background);
+  font-size: var(--slidev-theme-cover-font-size);
 
   &::before {
     background: rgba(15, 19, 30, 0.4);
@@ -262,6 +283,7 @@
 /*  Section */
 .slidev-layout.section {
   background: var(--slidev-theme-section-background);
+  font-size: var(--slidev-theme-section-font-size);
 
   display: flex;
   flex-direction: column;
@@ -300,6 +322,7 @@
 /*  Center */
 .slidev-layout.center {
   background: var(--slidev-theme-center-background);
+  font-size: var(--slidev-theme-center-font-size);
 
   h1 {
     width: -moz-fit-content;
@@ -324,6 +347,7 @@
 /* Two columns */
 .slidev-layout.two-columns {
   background: var(--slidev-theme-default-background);
+  font-size: var(--slidev-theme-two-columns-font-size);
 
   h1 {
     color: var(--slidev-theme-default-headingColor);
@@ -338,6 +362,7 @@
 .about-me {
   background: var(--slidev-theme-aboutme-background);
   color: var(--slidev-theme-aboutme-color) !important;
+  font-size: var(--slidev-theme-aboutme-font-size);
 
   h1 {
     color: var(--slidev-theme-aboutme-helloColor);
