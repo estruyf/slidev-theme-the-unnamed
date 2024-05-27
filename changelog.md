@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.19] - 2024-05-27
+
+- Added `slot` to the about me slide which allows you to add custom content to the slide
+
 ## [0.0.18] - 2024-05-09
 
 - Added css to change the inline code block background and foreground colors
