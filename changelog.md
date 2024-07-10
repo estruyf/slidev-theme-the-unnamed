@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.20] - 2024-07-10
+
+- [#6](https://github.com/estruyf/slidev-theme-the-unnamed/issues/6): Fix loading the Shiki theme
+
 ## [0.0.19] - 2024-05-27
 
 - Added `slot` to the about me slide which allows you to add custom content to the slide
