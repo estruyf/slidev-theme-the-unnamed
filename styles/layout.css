@@ -7,6 +7,16 @@
   --slidev-theme-color: #f3eff5;
   --slidev-theme-background: #161c2c;
 
+  /* Text sizes */
+  --slidev-theme-font-size: 1.1em;
+  --slidev-theme-default-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-cover-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-section-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-center-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-two-columns-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-aboutme-font-size: var(--slidev-theme-font-size);
+  --slidev-theme-code-font-size: 12px;
+
   /* Code colors */
   --slidev-theme-code-background: #0f131e;
   --slidev-theme-code-border: #242d34;
@@ -19,6 +29,9 @@
   --slidev-theme-accents-lightblue: #15c2cb;
   --slidev-theme-accents-blue: #5eadf2;
   --slidev-theme-accents-vulcan: #0e131f;
+
+  /* Header shadow */
+  --slidev-theme-header-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   /*  Default */
   --slidev-theme-default-headingBg: var(--slidev-theme-accents-yellow);
@@ -41,7 +54,7 @@
   --slidev-theme-section-background: var(--slidev-theme-background);
 
   /*  About me */
-  --slidev-theme-aboutme-bg: var(--slidev-theme-color);
+  --slidev-theme-aboutme-background: var(--slidev-theme-color);
   --slidev-theme-aboutme-color: var(--slidev-theme-background);
   --slidev-theme-aboutme-helloBg: var(--slidev-theme-accents-yellow);
   --slidev-theme-aboutme-helloColor: var(--slidev-theme-background);
@@ -58,6 +71,13 @@
 
 /*  General layout styles */
 .slidev-layout {
+  font-size: var(--slidev-theme-font-size, 1.1em);
+
+  :not(pre) > code {
+    background: var(--slidev-theme-code-background);
+    color: var(--slidev-theme-code-color, var(--slidev-theme-color));
+  }
+
   h1 + p {
     opacity: 1;
   }
@@ -69,7 +89,7 @@
     color: var(--slidev-theme-color);
     border-color: #f141a8;
     border-left-width: 3px;
-    font-size: 1.1em;
+    font-size: var(--slidev-theme-font-size, 1.1em);
   }
 
   h1 {
@@ -133,6 +153,14 @@
       background-repeat: no-repeat;
     }
   }
+
+  .slidev-code code {
+    font-size: var(
+      --slidev-theme-code-font-size,
+      var(--slidev-code-font-size),
+      1em
+    ) !important;
+  }
 }
 
 .slidev-layout.cover,
@@ -153,6 +181,7 @@
 .slidev-layout.intro,
 .slidev-layout.default,
 .slidev-layout.center,
+.slidev-layout.two-columns,
 .slidev-layout[layout="default"],
 .about-me {
   h1 {
@@ -163,6 +192,7 @@
     z-index: 1;
 
     &::before {
+      box-shadow: var(--slidev-theme-header-shadow);
       content: " ";
       display: block;
       position: absolute;
@@ -185,6 +215,9 @@
 /*  Default */
 .slidev-layout.default,
 .slidev-layout[layout="default"] {
+  background: var(--slidev-theme-default-background);
+  font-size: var(--slidev-theme-default-font-size);
+
   h1 {
     color: var(--slidev-theme-default-headingColor);
 
@@ -192,10 +225,16 @@
       background: var(--slidev-theme-default-headingBg);
     }
   }
+
+  p {
+  }
 }
 
 /*  Cover */
 .slidev-layout.cover {
+  background: var(--slidev-theme-cover-background);
+  font-size: var(--slidev-theme-cover-font-size);
+
   &::before {
     background: rgba(15, 19, 30, 0.4);
     content: " ";
@@ -206,9 +245,9 @@
     left: 0;
   }
 
-  &.slidev-page-1 {
-    p {
-      font-weight: bold;
+  &.no-background {
+    &::before {
+      display: none;
     }
   }
 
@@ -253,6 +292,9 @@
 
 /*  Section */
 .slidev-layout.section {
+  background: var(--slidev-theme-section-background);
+  font-size: var(--slidev-theme-section-font-size);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -289,6 +331,9 @@
 
 /*  Center */
 .slidev-layout.center {
+  background: var(--slidev-theme-center-background);
+  font-size: var(--slidev-theme-center-font-size);
+
   h1 {
     width: -moz-fit-content;
     width: fit-content;
@@ -303,12 +348,31 @@
       background: transparent !important;
     }
   }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Two columns */
+.slidev-layout.two-columns {
+  background: var(--slidev-theme-default-background);
+  font-size: var(--slidev-theme-two-columns-font-size);
+
+  h1 {
+    color: var(--slidev-theme-default-headingColor);
+
+    &::before {
+      background: var(--slidev-theme-default-headingBg);
+    }
+  }
 }
 
 /* About me slide */
 .about-me {
-  background: var(--slidev-theme-aboutme-bg);
+  background: var(--slidev-theme-aboutme-background);
   color: var(--slidev-theme-aboutme-color) !important;
+  font-size: var(--slidev-theme-aboutme-font-size);
 
   h1 {
     color: var(--slidev-theme-aboutme-helloColor);

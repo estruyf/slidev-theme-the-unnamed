@@ -24,6 +24,7 @@ The theme currently has the following layouts:
 - `cover`
 - `center`
 - `section`
+- `two-cols`
 - `about-me`
 - and the ones from Slidev itself
 
@@ -88,6 +89,28 @@ background: <image url or HEX or rbg or rgba> (optional)
 ---
 ```
 
+### Two columns
+
+![](/assets/two-cols.png)
+
+**Usage**
+
+```yaml
+---
+layout: two-cols
+---
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
 ### Default
 
 ![](/assets/default.png)
@@ -100,7 +123,6 @@ layout: default
 background: <image url or HEX or rbg or rgba> (optional)
 ---
 ```
-
 
 ## Cusomizations
 
@@ -121,27 +143,38 @@ themeConfig:
   accents-blue: "#5EADF2"
   accents-vulcan: "#0E131F"
 
+  header-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
   default-headingBg: var(--slidev-theme-accents-yellow)
   default-headingColor: var(--slidev-theme-accents-vulcan)
   default-background: var(--slidev-theme-background)
+  default-font-size: 1.1em
 
   center-headingBg: var(--slidev-theme-accents-blue)
   center-headingColor: var(--slidev-theme-accents-vulcan)
   center-background: var(--slidev-theme-background)
+  center-font-size: 1.1em
 
   cover-headingBg: var(--slidev-theme-accents-teal)
   cover-headingColor: var(--slidev-theme-accents-vulcan)
   cover-background: var(--slidev-theme-background)
+  cover-font-size: 1.1em
 
   section-headingBg: var(--slidev-theme-accents-lightblue)
   section-headingColor: var(--slidev-theme-accents-vulcan)
   section-background: var(--slidev-theme-background)
+  section-font-size: 1.1em
 
-  aboutme-bg: var(--slidev-theme-color)
+  aboutme-background: var(--slidev-theme-color)
   aboutme-color: var(--slidev-theme-background)
   aboutme-helloBg: var(--slidev-theme-accents-yellow)
   aboutme-helloColor: var(--slidev-theme-background)
   aboutme-nameColor: var(--slidev-theme-accents-red)
+  aboutme-font-size: 1.1em
+
+  code-background: var(--slidev-theme-code-background)
+  code-color: var(--slidev-theme-code-color)
+  code-font-size: 1.1em
 ```
 
 > **Info**: we made it possible to change all the accent colors, or define your own colors per type of slide.

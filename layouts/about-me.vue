@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {computed} from 'vue'
-import {handleBackground} from "../utils/layoutHelper";
+  import { computed } from 'vue'
+  import { handleBackground } from '@slidev/client/layoutHelper.ts'
 
 const props = defineProps<{
     imageSrc?: string
@@ -45,4 +45,3 @@ const style = computed(() => handleBackground(props.imageSrc, false))
         </div>
     </div>
 </template>
-
