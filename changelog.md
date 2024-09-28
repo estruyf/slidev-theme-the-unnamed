@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.21] - 2024-09-28
+
+- Update dependencies and example
+
 ## [0.0.20] - 2024-07-10
 
 - [#6](https://github.com/estruyf/slidev-theme-the-unnamed/issues/6): Fix loading the Shiki theme
