@@ -43,15 +43,15 @@ themeConfig:
 
 # Slidev - The Unnamed
 
-Created by [Elio Struyf](https://elio.dev)
+Created by [Elio Struyf](https://eliostruyf.com)
 
 ---
 layout: about-me
 
 helloMsg: Hello!
 name: Elio Struyf
-imageSrc: https://elio.dev/eliostruyf_2022.jpg
-job: Lead DevTools Engineer @ Rapid 
+imageSrc: https://elio.dev/eliostruyf_2023.jpg
+job: Struyf Consulting 
 line1: "#Stickerpreneur @ pyod.shop"
 line2: "#Maintainer @ Front Matter CMS"
 social1: "@eliostruyf"
