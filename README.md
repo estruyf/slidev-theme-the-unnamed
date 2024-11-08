@@ -54,6 +54,7 @@ layout: about-me
 helloMsg: Hello!
 name: <name>
 imageSrc: <image url>
+position: <left or right>
 job: <job title>
 line1: 
 line2: 

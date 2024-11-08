@@ -50,7 +50,8 @@ layout: about-me
 
 helloMsg: Hello!
 name: Elio Struyf
-imageSrc: https://elio.dev/eliostruyf_2023.jpg
+imageSrc: https://elio.dev/eliostruyf_2024.webp
+position: left
 job: Struyf Consulting 
 line1: "#Stickerpreneur @ pyod.shop"
 line2: "#Maintainer @ Front Matter CMS"
