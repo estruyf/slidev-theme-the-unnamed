@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "The unnamed",
+  "name": "the-unnamed",
   "type": "dark",
   "colors": {
     "foreground": "#F3EFF5",
@@ -156,8 +156,7 @@
     "terminal.ansiBrightCyan": "#15c2cb",
     "terminal.ansiBrightWhite": "#f3eff5"
   },
-  "tokenColors": [
-    {
+  "tokenColors": [{
       "scope": [
         "meta.paragraph.markdown",
         "string.other.link.description.title.markdown"

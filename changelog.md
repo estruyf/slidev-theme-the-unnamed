@@ -3,6 +3,7 @@
 ## [0.0.22] - 2024-11-08
 
 - Added support for the `about-me` slide to position the image
+- Updated theme name to support Monaco Editor
 
 ## [0.0.21] - 2024-09-28
 
