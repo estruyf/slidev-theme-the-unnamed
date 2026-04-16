@@ -300,7 +300,6 @@
   justify-content: center;
 
   height: 100%;
-  font-size: 1.1rem;
   line-height: 1;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -323,7 +322,7 @@
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.15em;
     margin-bottom: 1em;
     line-height: 1.25em;
   }
@@ -350,7 +349,7 @@
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.15em;
   }
 }
 
@@ -388,6 +387,10 @@
   h2 {
     color: var(--slidev-theme-aboutme-nameColor);
     font-size: 2.5em;
+  }
+
+  .aboutme-details {
+    font-size: 1.5em;
   }
 
   p {

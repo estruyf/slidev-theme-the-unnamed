@@ -33,13 +33,13 @@
         <div class="flex flex-col flex flex-col justify-end py-16" :class="[textItems, textAlign]">
           <h2 class="font-extrabold">{{ name }}</h2>
 
-          <div class="text-2xl space-y-2 mt-4">
+          <div class="aboutme-details space-y-2 mt-4">
             <p class="job">{{ job }}</p>
             <p class="line-1">{{ line1 }}</p>
             <p class="line-2">{{ line2 }}</p>
           </div>
 
-          <div class="text-2xl space-y-2 mt-4">
+          <div class="aboutme-details space-y-2 mt-4">
             <p class="social social-1">{{ social1 }}</p>
             <p class="social social-2">{{ social2 }}</p>
             <p class="social social-3">{{ social3 }}</p>

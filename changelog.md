@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.23] - 2026-04-16
+
+- [#11](https://github.com/estruyf/slidev-theme-the-unnamed/issues/11): Fix custom font size not working for section, center, and about-me layouts
+
 ## [0.0.22] - 2024-11-08
 
 - Added support for the `about-me` slide to position the image
