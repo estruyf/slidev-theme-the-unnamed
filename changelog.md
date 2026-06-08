@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.24] - 2026-06-08
+
+- [#12](https://github.com/estruyf/slidev-theme-the-unnamed/issues/12): Fix Shiki setup breaking the Slidev web editor due to Node path usage in browser context. Thanks to [jlrigau](https://github.com/jlrigau).
+
 ## [0.0.23] - 2026-04-16
 
 - [#11](https://github.com/estruyf/slidev-theme-the-unnamed/issues/11): Fix custom font size not working for section, center, and about-me layouts
